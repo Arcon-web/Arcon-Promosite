@@ -8,7 +8,8 @@
   <link rel="stylesheet" href="./css/app.scss">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <script src="https://unpkg.com/scrollnav@3.0.2/dist/scrollnav.min.umd.js"></script>
   <title>Arcon Promosite</title>
 </head>
 
@@ -23,21 +24,18 @@
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
-      
-        <div class="content">
-          <ul>
-            <li><a href="#">Concept</a></li>
-            <li><a href="#">Buy Now</a></li>
-            <li><a href="#">About Us</a></li>
-          </ul>
+
+        <div class="page__header">
         </div>
-    </div>
+      </div>
     </nav>
     <div class="headImg">
       <img src="./img/arcades.jpg" alt="arcades">
     </div>
   </header>
-  <main>
+
+  <main class="post__article">
+    <button onclick="topfunction()" id="up" title="Go to top">Top</button>
     <section>
       <div class="content left">
         <h2>Concept</h2>
@@ -68,10 +66,11 @@
     </section>
   </main>
   <script>
-  function burger(x){
-    x.classList.toggle("change");
-  }
+    function burger(x) {
+      x.classList.toggle("change");
+    }
   </script>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
